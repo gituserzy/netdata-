@@ -1,37 +1,42 @@
 # netdata 简中汉化
 
-#### 介绍
 适用于netdata版本：**`v1.32.1-37-nightly`** 。
 
-#### 软件架构
-软件架构说明
+netdata 是非常实用且实时的效能监视套件，对于每项效能指标不仅标示用途，更详细说明造成的原因以及影响，只可惜这么棒的说明全都是英文，相关汉化完成度也并不高，所以有了这个项目的产生。
+
+几乎所有文本都有汉化。
+
+## 使用说明
+
+请将这四个文件下载后，覆盖至路径 '/usr/share/netdata/web/' ，请先备份，请先备份，请先备份。
+
+- dashboard_info.js
+- dashboard.js
+- main.js
+- index.html
+
+docker中修改方法：
+
+​	1、查看netdata容器id
+
+​		`docker ps -a`
+
+​	2、将下载文件复制到容器中
+
+​		`docker cp 文件地址(例如：/tmp/dashboard.js) 容器id:/usr/share/netdata/web/`
+
+​	3、重启netdata容器
+
+​		`docker restart netdata
+
+​	注意：此方法只适用当前容器的netdata，重新创建netdata容器需要再次进行上诉操作。
+
+完成后，请清除浏览器缓存后再访问。
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+## 画面展示
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+
